@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Marvel Front</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<h1>Marvel Browser</h1>
+	</header>
+	<main class="container">
+		<p>
+			This page will become into a marvel browser for marvel lovers.
+		</p>
+		<label>Enter a name hero:</label>
+		<input id="name-hero" type="text" name="name-hero" >
+		<button onclick="findHero()">Find!!</button>
+
+		<p class="result-name">The name of your hero is: </p>
+		<p class="result-content">Description: </p>
+		<h3>Image:</h3>
+		<div class="result-image"></div>
+	</main>
+	<footer>
+		Created by <a href="https://github.com/juandavidgrisales">Juan David Grisales Garzon</a>
+	</footer>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/vendor/md5.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
