@@ -33,25 +33,9 @@ function findHero () {
     }).then(function(data) {
     	var firtsResult = data.data.results[0];
     	console.log(firtsResult);
-    	$('.result-name').append(firtsResult.name);
-	    $('.result-content').append(firtsResult.description);
-	    $('.result-image').empty().append('<img src="'+firtsResult.thumbnail.path+'" height="64px" width="64px">');
+    	$('.result-name').empty().append("The name of your hero is:" +firtsResult.name);
+	    $('.result-content').empty().append("Description:" + firtsResult.description);
+	    $('.result-image').empty().append('<img src="'+firtsResult.thumbnail.path+"."+firtsResult.thumbnail.extension+'" height="256px" width="256px">');
     });
-
-    //Getting a hero
-
-    //console.log(heroURL);
-
-    /*if (heroURL != null) {
-    	$.ajax({
-	        url: heroURL
-	    }).then(function(data) {
-	    	//var firtsResult = data.data.results[0];
-	    	console.log(data);
-	       	/*$('.result-name').append(firtsResult.name);
-	       	$('.result-content').append(firtsResult.description);
-	       	$('.result-image').empty().append('<img src="'+firtsResult.+'" height="64px" width="64px">');
-	    });
-    }*/
     
 }
